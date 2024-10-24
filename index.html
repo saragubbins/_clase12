@@ -74,7 +74,7 @@
             //acá voy por el JSON
 
             async function astros() {
-                const consulta = await fetch("https://raw.githubusercontent.com/saragubbins/_clase12/refs/heads/main/datos.json");
+                const consulta = await fetch("https://raw.githubusercontent.com/saragubbins/Portafolio_prueba/refs/heads/main/datos.json");
                 const data = await consulta.json();
                 console.log(data);
 
@@ -83,12 +83,14 @@
                         (principal.innerHTML += `
                 <div class="${d.signo} col mb-3">
                     <div class="card h-100 text-bg-light">
-                        <img src="https://saragubbins.github.io/_clase12/img/${d.foto}" class="object-fit-cover" alt="${d.fecha}">
-                        <div class=card-body">
+                        <img src="https://raw.githubusercontent.com/saragubbins/Portafolio_prueba/refs/heads/main/datos.json" alt="${d.fecha}">
+                        <div class="card-body">
 
                             <p class="card-text"> 
                              <a href="single.html?data=${i}" class= "link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover 
                              stretched-link">${d.nombre} </a> </p>
+
+                             
                             
                             <div class="d-flex justify-content-around align-items-stretch">
                                  <small class="text-body-secondary">${d.signo}</small>

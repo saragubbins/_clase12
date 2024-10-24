@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bs-info-rgb: 178, 223, 219;
+  --bs-font-sans-serif: "Work Sans", sans-serif; 
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-light-rgb:128, 203, 196;
+  }
